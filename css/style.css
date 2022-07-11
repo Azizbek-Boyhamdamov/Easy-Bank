@@ -71,10 +71,7 @@ body{
   font-family: 'Public Sans',"Arial", sans-serif;
   background-color: #fff;
   color: var(--text-color);
-  background-image: url("../img/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 1371px 1088px;
-  background-position: top -180px right -534px;
+
 }
 
 img{
@@ -166,6 +163,9 @@ a{
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
+  background-image: url("../img/hero-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top -260px left calc(50% + 604px);
 }
 
 /* SITE-HEADER */
@@ -174,6 +174,7 @@ a{
   padding-top: 18px;
   padding-bottom: 18px;
   background-color: #fff;
+  z-index: 50;
 }
 
 .site-header__container {
@@ -246,9 +247,13 @@ a{
 
 /* HERO */
 
-.hero {
+
+.hero__container{
+  position: relative;
+  display: flex;
   padding-top: 170px;
   padding-bottom: 170px;
+  padding-right: 25px;
 }
 
 .hero__content {
@@ -271,6 +276,93 @@ a{
   letter-spacing: -0.3px;
 }
 
+.hero__image{
+  position: absolute;
+  display: block;
+  width: 795px;
+  height: 960px;
+  top: -133px;
+  right: -291px;
+}
+
+/* PROPOSAL */
+
+.proposal {
+  padding-top: 96px;
+  padding-bottom: 94px;
+  background-color: #f4f5f7;
+}
+
+.proposal__content{
+  width: 100%;
+  max-width: 635px;
+  margin-bottom: 72px;
+}
+
+.proposal__heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.71px;
+  font-weight: 100;
+  color: var(--title-color);
+}
+
+.proposal__text {
+  margin: 0;
+  color: var(--text-color);
+  letter-spacing: -0.28px;
+}
+
+.proposal__list {
+  display: flex;
+  align-items: center;
+}
+
+.proposal__item {
+  width: 255px;
+  text-align: left;
+}
+
+.proposal__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.features__image-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  background: var(--main-button);
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: var(--title-color);
+}
+
+.features__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+}
+
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -279,8 +371,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  body{
-    background-image: url("../img/hero-bg@2x.png");
+  .main-content{
+    background-image: url("../img/hero-bg-desktop@2x.png");
   }
-
 }
