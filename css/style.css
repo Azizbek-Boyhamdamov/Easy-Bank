@@ -276,10 +276,10 @@ a{
 .hero__image{
   position: absolute;
   display: block;
-  width: 795px;
+  width: 790px;
   height: 960px;
   top: -133px;
-  right: -291px;
+  left: calc(50% + 75px);
 }
 
 /* PROPOSAL */
