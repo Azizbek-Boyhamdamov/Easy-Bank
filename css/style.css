@@ -163,9 +163,7 @@ a{
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
-  background-image: url("../img/hero-bg-desktop.png");
-  background-repeat: no-repeat;
-  background-position: top -260px left calc(50% + 604px);
+
 }
 
 /* SITE-HEADER */
@@ -246,14 +244,13 @@ a{
 }
 
 /* HERO */
-
-
-.hero__container{
+.hero{
   position: relative;
-  display: flex;
   padding-top: 170px;
   padding-bottom: 170px;
-  padding-right: 25px;
+  background-image: url("../img/hero-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top -260px left calc(50% + 604px);
 }
 
 .hero__content {
