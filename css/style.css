@@ -368,8 +368,6 @@ a{
 
 }
 
-
-
 .latest-articles__heading{
   font-weight: 100;
   font-size: 40px;
@@ -455,7 +453,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-  .main-content{
+  .hero{
     background-image: url("../img/hero-bg-desktop@2x.png");
   }
 }
